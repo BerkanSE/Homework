@@ -8,7 +8,7 @@ public class Customer implements IEntity{
 	private int id;
 	private String firstName;
 	private String lastName;
-	private LocalDate dateOfBirth;
+	private int dateOfBirth;
 	private String nationalityId;
 	
 	public Customer() {
@@ -16,7 +16,7 @@ public class Customer implements IEntity{
 	}
 	
 	public Customer(int id, String firstName,
-			String lastName, LocalDate dateOfBirth, String nationalityId) {
+			String lastName, int dateOfBirth, String nationalityId ) {
 		
 		super();
 		this.id = id;
@@ -50,11 +50,11 @@ public class Customer implements IEntity{
 		this.lastName = lastName;
 	}
 
-	public LocalDate getDateOfBirth() {
+	public int getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(LocalDate dateOfBirth) {
+	public void setDateOfBirth(int dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
